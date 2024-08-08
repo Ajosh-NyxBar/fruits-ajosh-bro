@@ -14,6 +14,13 @@ const bgStyle = {
   backgroundRepeat: "no-repeat",
 };
 
+const imgStyle = {
+  backgroundImage: `bg-white`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+};
+
 const Banner3 = () => {
   return (
     <section className="">
@@ -22,7 +29,7 @@ const Banner3 = () => {
         style={bgStyle}
       >
         {/* Img */}
-        <div className="min-w-[350px]"></div>
+        <div className="md:min-h-[450px] md:min-w-[450px]"></div>
         {/* Info */}
         <div className="flex flex-col gap-4 max-w-[500px]">
           <motion.h1
@@ -30,7 +37,8 @@ const Banner3 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             animate="visible"
             variants={FadeUp(0.4)}
-            className="text-3xl lg:text-5xl font-bold"
+            className="text-3xl lg:text-5xl font-bold text-center md:text-left"
+            style={imgStyle}
           >
             Brand Info
           </motion.h1>
@@ -39,7 +47,8 @@ const Banner3 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             animate="visible"
             variants={FadeUp(0.8)}
-            className=""
+            className="text-center md:text-left text-sm md:text-base"
+            style={imgStyle}
           >
             this is the brand info, enjoy the fruits, energy, and health. don't
             forget to subscribe, like, and share, thank you for watching. and
@@ -50,7 +59,8 @@ const Banner3 = () => {
             whileInView={{ opacity: 1, y: 0 }}
             animate="visible"
             variants={FadeUp(1.2)}
-            className=""
+            className="text-center md:text-left text-sm md:text-base"
+            style={imgStyle}
           >
             this is the brand info, enjoy the fruits, energy, and health. don't
             forget to subscribe, like, and share, thank you for watching. and
