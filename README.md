@@ -75,4 +75,4 @@ Jika Anda ingin berkontribusi pada proyek ini, silakan buat pull request atau bu
 
 Proyek ini dilisensikan di bawah lisensi MIT.
 
-BY AJOSH
+BY AJOSHdada
